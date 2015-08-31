@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+The Header of the web page is where the following is defind:
+Title: page's title "each page may has different title"
+Web page Description: description of the page
+Keywords for on-line searching, which defines the categories where this page may found, that more key words better chance to be found.
+the author name: the author "myself"
+charset: Specify the character encoding for the HTML document 
+-->
+<head>
+<title>ISSA G MALKE / Contact Info</title>
+<meta name="description" content="ISSA MALKE BIO">
+<meta name="keywords" content="ISSA MALKE, BIO, UF">
+<meta name="author" content="Issa Malke">
+<meta charset="utf-8">
+<link href="ISSA MALKE.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<!--
+The Body of the Web page, where most of the code/text is here.
+-->
+<!--
+	Call the class Header the Header_font "you can call many classes, also a class and a ID"
+	Type the specified text in the header of the page, with the specified font from the class header_font
+-->
+<!--
+	Here where the mp3 file "audio file" is added and its position is located within the header
+	and I used spaces to located in a specific location.
+	The audio is set to automatically play the melody and the control panel is displayed.
+	In case the Browser does not support MP3 type audio then a sentence will display stating that.
+-->
+<div id="wrapper">
+	<div class="header">
+	<div class="Header_font"> I'm ISSA Gabriel Malke &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <audio src='Track2.mp3' autoplay controls>
+	<p>If you are reading this, it is because your browser does not support the audio element.</p>
+	</audio>
+</div>
+</div>
+<!--
+	Here is the Navigation List, which is placed on the right side of the each page
+	It consists of three blocks, which are defined by nav attribute(s) from the css sheet 
+-->
+   <nav>
+    <ul>
+      <li><div class="border"><a href="index.html">About Me</a></div></li>
+	  <li><a href="Issa Malke Resume.pdf"target="_blank">My Resume</a></li>
+      <li><a href="Contact Me.html">Contact Me</a></li>
+    </ul>
+  </nav>
+<!--
+	The ID Content is called here to shape the middle "area between header, footer, and navigation bar" of the page so a text and picture can be added.
+	Then, class font is called to shape the text properties which is typed here. Each <br> correspond to a new line.
+	Look @ css for more details on what style each attribute "fieldset, legend, .." is providing her.
+-->
+  <div id="content"> 
+  
+ 	<h3 class="font">NO phone Calls After 12:00 am, Please !</h3>
+    
+	<form id=brown_box>
+	<fieldset>
+		<legend>Phone Number:</legend>
+		<ol>
+			<li>
+			 <div class="font"> (727) 277 - 2593 </div>		
+			</li>
+		</ol>
+		<br>
+		<legend>E-mail Me:</legend>		
+		<ol>
+		<li>
+			<div class="font"><a href="mailto:issa.malke@ufl.edu?Subject=an E-mail from Dr. Christen" target="_blank">Send Mail</a></div>
+		</li>
+		</ol>
+		<br>
+		<legend>Physical Address:</legend>
+		<ol>
+			<li>
+			 <div class="font"> 4695 sw 18th Pl. Apt# 2513B
+								Gainesvill, FL. 32607</div>		
+			</li>
+		</ol>
+		<br>
+		<legend>FaceBook Profile:</legend>
+		<ol>
+			<li>
+			 <div class="font"><a href=" https://www.facebook.com/hawsho.issa" target="_blank">Click Here</a></div>		
+			</li>
+		</ol>
+		<br>
+		<legend>Linkedin Profile:</legend>
+		<ol>
+			<li>
+			 <div class="font"><a href="https://www.linkedin.com/pub/issa-malke/2b/449/480?domainCountryName=&csrfToken=ajax%3A3211821677524084325" target="_blank">Click Here</a></div>		
+			</li>
+		</ol>
+	</fieldset>
+
+</form>
+<!--
+	5 pictures are listed here and each one is using different class to determine its position on the page
+ -->
+	<img class="Box5" src="crazy.gif" alt="Funny Animation.1">
+	<img class="Box7" src="good.gif" alt="Funny Animation.3">
+	<img class="Box8" src="blush.gif" alt="Funny Animation.4">
+	<img class="Box3" src="door.gif" alt="Funny Animation.5">	
+	<img class="Box4" src="Roman_Column.PNG" alt="ISSA">
+
+  </div>
+<!--
+	The Footer of the page where I placed, copyright symbol, and other huper-links which are the same once on the right navigation bar, I put these once here for convince
+-->
+   <footer>Copyright &copy; 2015 Issa Malke. All rights Reserved.
+  <div class="hypLinks"><a href="index.html">About Me</a>&nbsp;<a href="Issa Malke Resume.pdf"target="_blank">My Resume</a>&nbsp;<a href="Contact Me.html">Contact Me</div>
+  </footer>
+ </div>
+</body>
+</html>
+
+

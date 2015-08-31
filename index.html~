@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+The Header of the web page is where the following is defind:
+Title: page's title "each page may has different title"
+Web page Description: description of the page
+Keywords for on-line searching, which defines the categories where this page may found, that more key words better chance to be found.
+the author name: the author "myself"
+charset: Specify the character encoding for the HTML document 
+-->
+<head>
+<title>ISSA G MALKE / BIO</title>
+<meta name="description" content="ISSA MALKE BIO">
+<meta name="keywords" content="ISSA MALKE, BIO, UF">
+<meta name="author" content="Issa Malke">
+<meta charset="utf-8">
+<link href="ISSA MALKE.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<!--
+The Body of the Web page, where most of the code/text is here.
+-->
+<!--
+	Call the class Header the Header_font "you can call many classes, also a class and a ID"
+	Type the specified text in the header of the page, with the specified font from the class header_font
+-->
+<!--
+	Here where the mp3 file "audio file" is added and its position is located within the header
+	and I used spaces to located in a specific location.
+	The audio is set to automatically play the melody and the control panel is displayed.
+	In case the Browser does not support MP3 type audio then a sentence will display stating that.
+-->
+<div id="wrapper">
+	<div class="header">
+	<div class="Header_font">I'm ISSA Gabriel Malke &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+	<audio src='Track0.mp3' autoplay controls >
+	<p>If you are reading this, it is because your browser does not support the audio element.</p>
+	</audio>
+	</div>
+	</div>
+<!--
+	Here is the Navigation List, which is placed on the right side of the each page
+	It consists of three blocks, which are defined by nav attribute(s) from the css sheet 
+-->
+  <nav>
+    <ul>
+      <li><div class="border"><a href="index.html">About Me</a></div></li>
+	  <li><a href="ISSA MALKE Resume.pdf"target="_blank">My Resume</a></li>
+      <li><a href="Contact Me.html">Contact Me</a></li>
+    </ul>
+  </nav>
+<!--
+	The ID Content is called here to shape the middle "area between header, footer, and navigation bar" of the page so a text and picture can be added.
+	Then, class Article is called with h3 to shape the text/paragraph which is typed here. Each <br> correspond to a new line
+-->
+<div id="content"> 
+ <div class="article" > <h3> My name is <span class="fontII">Issa Gabriel Malke.</span> I am 32 and an international student from Syria
+ <br> studying undergraduate-level computer engineering at the University of Florida.
+ <br> I arrived to United States in Jan. 5, 2010 and since then I did not leave Florida.
+ <br> I graduate from St.Petersburg College with AA degree in May 2013 and transferred to
+ <br> University of Florida to pursue a BS degree in computer engineering, software emphasis.
+  <br>
+  <br> This is my <span class="fontII">third</span> year at the University of Florida, and I am planning to graduate
+  <br> in Dec. 2016. I am interested in applying to Grade school "Intelligent Systems & Image-
+  <br> processing" here at UF, but I did not make up my mind, yet.
+  <br>
+  <br> <span class="fontII">Currently,</span> I am a research assistant working with Dr. Linda Haddad "UF, College of 
+  <br> Nursing" conducting a research on smoking cessation for Arab American men.
+  <br> I speak four languages:
+<!--
+	A bullet points list, type disc
+-->
+<ul>
+  <li type="disc">Aramaic "native language"</li>
+  <li type="disc">Arabic</li>
+  <li type="disc">English</li>
+  <li type="disc">Turkish</li>
+</ul>  
+  </h3>
+  </div>
+
+</div>
+ 
+<!--
+	5 pictures are listed here and each one is using different class to determine its position on the page
+ -->
+<img class="Box1" src="me.PNG" alt="ISSA">	
+<img class="Box4" src="Roman_Column.PNG" alt="ISSA">
+<img class="Box5" src="crazy.gif" alt="Funny Animation.1">
+<img class="Box7" src="good.gif" alt="Funny Animation.3">
+<img class="Box8" src="blush.gif" alt="Funny Animation.4">
+<!--
+	This is the Arrow picture, which is once is clicked it takes you to the next page
+-->
+<a href='next.html'>
+<img class="Box10" src="arrow.gif" alt="Next Page">
+</a>
+  </div>
+<!--
+	The Footer of the page where I placed, copyright symbol, and other huper-links which are the same once on the right navigation bar, I put these once here for convince
+-->
+  <footer>Copyright &copy; 2015 Issa Malke. All rights Reserved.
+  <div class="hypLinks"><a href="index.html">About Me</a>&nbsp;<a href="Issa Malke Resume.pdf"target="_blank">My Resume</a>&nbsp;<a href="Contact Me.html">Contact Me</div>
+  </footer>
+ </div>
+</body>
+</html>
+
+

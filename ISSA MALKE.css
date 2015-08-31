@@ -1,0 +1,221 @@
+
+/*This is the over all style "font,and background color" of the Body of the website page*/
+body {font-family:Verdana, Arial, sans-serif;
+      background-color: #FFFACD; 
+}
+/*This is the specifications "background color, radius, border, padding, and width" of the box in the "Contact Me" table, where all the Contact informations are listed*/
+#brown_box {
+	background: #8B5A2B;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 20px;
+	width: 400px;
+	
+}
+/*This Block of Code is to make the Text in the "About me, and Next page" to move from top to down in 5 seconds then stop, no repeat
+It includes standard code that works with IE and FireFox, and other code for other web browsers */
+div {  
+    -webkit-animation: mymove 5s ; /* Chrome, Safari, Opera */
+    animation: mymove 5s ;
+}
+
+/* Chrome, Safari, Opera */
+#div1 {-webkit-animation-timing-function: linear;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {down: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {top: 0px;}
+    to {down: 300px;}
+}
+/*
+This a defined block is the specification of the a "tag", which is used in different pages "hyper-links"
+Also, it used to define the Button behaviour:
+a:link is the color, background-color & text-decoration status when no mouse points to it
+a:visited is same options with one different value"color" and that for when the button/tag is vivited
+a:hover same as explained before but when the mouse pointer is above/on the button "no click"
+a:active same as above, but when it clicked
+*/
+a:link    {color:brown; background-color:transparent; text-decoration:none}
+a:visited {color:brown; background-color:transparent; text-decoration:none}
+a:hover   {color:white; background-color:transparent; text-decoration:none}
+a:active  {color:yellow; background-color:transparent; text-decoration:none}
+/*
+FieldSet, legend, and ol li are used to shape the "Contact Me" table, which also had a brown box defined already, which gives the color & outer box borders/shape.
+its executes in this order from outer to inner:
+Brown Box
+fieldset "I modified the border to be none, and make a bottom margin of 10 pixels"
+legend "features of the title of each filed"
+ol li  "features of information, subtitle info"
+*/
+fieldset {
+	border: none;
+	margin-bottom: 10px;
+}
+ fieldset:last-of-type {
+	margin-bottom: 0;
+}
+legend {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-shadow: 0 2px 2px #1e2506;
+}
+ol li {
+	background: #b9cf6a;
+	background: rgba(255,255,255,.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+/*
+Its very similar to a, which is used for tags and buttons, but her is for Navigation bar, which is on the right side of the page
+The following features defines the color, background-color, width of the button of the Navigation bar,..etc.
+and it status when its not clicked, hover, and clicked
+*/
+nav { float: right;
+	   width: 160px;
+	   letter-spacing:0.1em;
+	   font-weight: bold;
+} 
+nav ul { list-style-type: none; 
+                 margin: 0;
+				 padding: 0;
+}
+nav a { text-decoration: none; 
+                display: block;
+	            padding: 20px;   
+                background-color: #8B5A2B;				
+				border-bottom:1px solid #ffffff;				
+}
+nav a:link { color: #ffffff; }
+nav a:visited { color: #eaeaea; }
+nav a:hover { background-color: #CDBE70;
+              color: #282828; }
+/*
+h1, h2 usually have default values, and usually as h increase the font size increases. but here ,especially for h2, the font-size, style and other
+features are modified, actually, I could just used h2, and add this modification to a font class.
+But I kept it like this to minimize number of classes used
+*/
+ h1 { margin-bottom: 0; padding-left:50px;}
+ h2 { margin: 0; 
+            padding: 0 75px 20px 0;
+            font-size: .80em; 
+            font-style: italic;
+            text-align: right; 
+            color: #8B6914; 
+		}
+/*
+This is the Footer of the page, where everything related to that bar is defined here.
+font-size, height of the footer bar, padding, color ...etc.
+*/
+footer {   
+		 height: 25px;
+		 font-size:70%;
+		 font-style: italic;
+         text-align: left;
+         padding: 10px;
+		 background-color: #CDBE70;
+		 color: #282828;
+		 clear: both;
+		 border-top:1px solid #ffffff;
+		 box-shadow: 5px 5px 5px #828282;
+}
+/*
+This is the first ID called Wrapper, which apply to all the body of the HTML code
+In other words, here where I defined the overall colors, background-color width...etc then other ID, Classes are applied to specific areas, boxes
+*/
+#wrapper { background-color: #8B5A2B; 
+           color: #8B7D6B;
+           width: 100%;
+		   margin: auto;
+           min-width: 960px;
+		   box-shadow: 5px 5px 5px #828282;
+} 
+/*
+This is the Second "big" ID called, Content, which is responsible for shaping the text area, while back-ground color ...etc
+*/
+#content {  background-color: #ffffff;
+           color: #000000;
+		   padding: 10px 20px;
+	       overflow: auto;  
+		   min-height: 795px;
+} 
+/*
+This is the Header Class, which is only applied to the header of each page, so I have a standard header for all pages
+Its include: color, font-size...etc
+*/
+.header { background-color: #CDBE70;
+        color: #8B5A2B; 
+        font-size: 150%; 
+        padding: 10px 10px 10px 220px;
+		background-image: url(Hello.jpg); 
+		background-repeat: no-repeat;
+		background-position: left;
+}
+/*
+This is a Shadow class is used to give a specific text/word a shadow, when needed!
+*/
+.shadow{text-shadow: 5px 5px 3px #666;}
+/*
+This is a class the define the hyper-links position to be in the middle of the footer, where it used/called
+Also, it define the size of the font to be 120%
+*/
+.hypLinks{text-align: center; font-size:120%;}
+/*
+This class is meant to draw a 1 pixel while line for one of the navigation buttons, and may used anywhere as needed 
+*/
+.border{border-top:1px solid #ffffff;}
+/*
+audio_bar is a class used to place the audio controls in a specific positions in the web page
+*/
+.audio_bar{ position: static; bottom: 50;}
+/*
+article and articleII are both classes used to place and specify the font, size, and color which are used to write the diagrams/text blocks.
+the only difference between the two is the position, that each one used for different page.
+*/
+.article{ position: absolute; left: 430px; top: 200px; text-align: left; font-family: papyrus, fantasy;
+			  text-shadow: 3px 3px 3px #828282; font-size: 120%;}
+.articleII{ position: absolute; left: 425px; top: 150px; text-align: left; font-family: papyrus, fantasy;
+			  text-shadow: 3px 3px 3px #828282; font-size: 120%;}
+/*
+font, fontII, and Header_font are all font defined classes that font & header_font are the same except their sizes are different 
+while fontII is has a different font style which is used to high light few words in the whole web page. e.g. ISSA Gabriel Malke, My Habits ..etc.
+*/
+.font{ font-family: papyrus, fantasy; text-shadow: 3px 3px 3px #828282; font-size: 22px;}
+.fontII{ font-family: cursive, sans-serif; text-shadow: 3px 3px 3px #828282; color: #8B5A2B; font-size: 26px;}
+.Header_font{ font-family: papyrus, fantasy; text-shadow: 5px 5px 5px #828282; font-size: 50px;}
+/*
+All these Boxes are used to place eight "8" pictures on the website in different position, that each picture needs to be place in a specific position.
+
+*/
+.Box1{ position: absolute; left: 30px; top: 180px;}
+.Box2{ position: absolute; left: 490px; top: 617px;}
+.Box3{ position: absolute; left: 800px; top: 500px;}
+.Box4{ position: absolute; right: 8px; top: 292px;}
+.Box5{ position: absolute; right: 15px; top: 115px;}
+.Box6{ position: absolute; left: 18px; top: 110px;}
+.Box7{ position: absolute; right: 11px; top: 172px;}
+.Box8{ position: absolute; right: 15px; top: 235px;}
+.Box9{ position: absolute; right: 463px; top: 245px;}
+.Box10{ position: absolute; right: 180px; top: 810px;}
+.Box11{ position: absolute; left: 20px; top: 190px;}
+.Box12{ position: absolute; right: 145px; top: 700px;}
